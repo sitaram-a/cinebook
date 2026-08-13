@@ -1,24 +1,91 @@
-# Logs
-logs
-*.log
+# =========================================================
+# CineBook - Git Ignore
+# =========================================================
+
+
+# =========================================================
+# ENVIRONMENT / SECRETS
+# =========================================================
+
+.env
+.env.*
+!.env.example
+
+# Spring Boot configuration containing secrets
+application-local.properties
+application-local.yml
+
+
+# =========================================================
+# NODE / REACT / VITE
+# =========================================================
+
+node_modules/
+dist/
+dist-ssr/
+
+*.local
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
 
-# Editor directories and files
+# =========================================================
+# JAVA / SPRING BOOT / MAVEN
+# =========================================================
+
+target/
+*.class
+
+# Maven generated files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+
+release.properties
+
+
+# =========================================================
+# IDE
+# =========================================================
+
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+
+.idea/
+*.iml
+
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+
+# =========================================================
+# LOGS
+# =========================================================
+
+logs/
+*.log
+
+
+# =========================================================
+# OPERATING SYSTEM
+# =========================================================
+
+.DS_Store
+Thumbs.db
+
+
+# =========================================================
+# TEMPORARY FILES
+# =========================================================
+
+*.tmp
+*.temp
+*.bak
