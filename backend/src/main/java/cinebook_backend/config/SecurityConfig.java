@@ -52,9 +52,12 @@ public class SecurityConfig {
         CorsConfiguration configuration =
                 new CorsConfiguration();
 
-        configuration.setAllowedOrigins(
-                List.of("http://localhost:5173")
-        );
+       configuration.setAllowedOrigins(
+        List.of(
+                "http://localhost:5173",
+                "https://cinebook-4ao2.onrender.com"
+        )
+);
 
         configuration.setAllowedMethods(
                 List.of(
