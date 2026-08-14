@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import {Link, useNavigate } from "react-router-dom";
 
 import api from "../services/api";
 import Navbar from "../components/Navbar";
@@ -151,6 +151,13 @@ function Login() {
                         </button>
 
                     </form>
+
+                    <p className="auth-footer">
+                        Don't have an account?{" "}
+                        <Link to="/register">
+                            Register
+                        </Link>
+                    </p>
 
                 </div>
 

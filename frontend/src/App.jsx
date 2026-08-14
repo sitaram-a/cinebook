@@ -20,6 +20,7 @@ import MovieDetailsNew from "./pages/MovieDetailsNew";
 import MyBookings from "./pages/MyBookings";
 import Payment from "./pages/Payment";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 import ProtectedRoute from "./components/ProtectedRoute";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminMovies from "./pages/admin/AdminMovies";
@@ -382,6 +383,11 @@ function App() {
                 <Route
                    path="/login"
                    element={<Login />}
+                />
+
+                <Route
+                path="/register"
+                element={<Register />}
                 />
 
             </Routes>
